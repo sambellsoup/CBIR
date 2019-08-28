@@ -3,10 +3,24 @@
 
 ### Feature Extraction
 
-  There are many different ways to extract features from images. My goal is to find the best performing algorithm for this dataset of images of bottles of liquor. There are 11 images in the query folder, so best out of 11 wins. 
+  There are many different ways to extract features from images, and I tried many of them. 
   
-Color Histogram 0/11
+  My goal is to create the best-performing Content-Based Image Retrieval System. I wanted to achieve a baseline, so I began by using a color histogram for each image and then calculating the nearest neighbor based on chi-squared distance. This algorithm performed horribly scoring a 0/11 matches, but it did provide a nice framework for the other models to come. 
+ 
+Image-Hashing with *VP-Trees* worked, but did not return any matching images. This is designed to return images that are the same or nearly the same, but the only semi-matching result was querying 'Four Grain' and the result being 'Four Roses.'
+
+
+
+ 
 
 ### Compute Closest Features and Sort by Distance
 
-### Retrieve photos
+### Next Steps
+
+Since SIFT and SURF are patented, I decided to check out ORB, the free alternative. ORB provides a list of keypoints and feature descriptors as vectors. Relating this information to a nearest neighbor, or bag of (visual) words is something I would like to explore further. 
+ 
+I tried a simple neural network. I was working with a simple neural network through Keras. It required me to denote how many classes/brands were in the training data. I split the file names and found there were about 350 unique brands of liquor. Still, I received errors about the input shape and the array shape not matching. This is somehting I would like to solve. 
+
+KAZE was very slow to extract the features from the images. There should be a better implementation of this for a larger dataset. 
+
+I attempted to setup a convolutional denoising autoencoder, but it is very time-consuming and difficult to debug. 
