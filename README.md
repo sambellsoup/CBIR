@@ -24,6 +24,7 @@ The packages I used for the VP-Trees model include:
 * time - keeping track of how long things take (not necessary) 
 
 ![Fully Subdivided Vantage Point Tree](https://i.imgur.com/141xhIo.png)
+(Fully subdivided vantage point tree)
 
 ### Next Steps
 
