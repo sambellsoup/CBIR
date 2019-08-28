@@ -9,19 +9,19 @@ My goal is to create the best-performing Content-Based Image Retrieval System. I
  
 Image-Hashing with **VP-Trees** worked, but did not return any matching images. This is designed to return images that are the same or nearly the same, but the only semi-matching result was querying 'Four Grain' and the result being 'Four Roses.'
 
-The packages I used for the VP-Trees model include
+The packages I used for the VP-Trees model include:
 
-numpy - to convert the assigned hash value to a float and then to an intccv
+* numpy - to convert the assigned hash value to a float and then to an intccv
 
-cv2 - to read and show the images
+* cv2 - to read and show the images
 
-imutils - image processing and moving
+* imutils - image processing and moving
 
-pickle - for saving data nearby
+* pickle - for saving data nearby
 
-vptree - vantage-point tree, the star algorithm that assigns images unique values based on their composition and calculates the distance between them. 
+* vptree - vantage-point tree, the star algorithm that assigns images unique values based on their composition and calculates the distance between them. 
 
-time - keeping track of how long things take (not necessary) 
+* time - keeping track of how long things take (not necessary) 
 
 ![Fully Subdivided Vantage Point Tree](https://i.imgur.com/141xhIo.png)
 
