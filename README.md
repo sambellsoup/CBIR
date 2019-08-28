@@ -29,7 +29,7 @@ The packages I used for the VP-Trees model include:
 
 Since SIFT and SURF are patented, I decided to check out ORB, the free alternative. ORB provides a list of keypoints and feature descriptors as vectors. Relating this information to a nearest neighbor, or bag of (visual) words is something I would like to explore further. 
  
-I tried a simple neural network. I was working with a simple neural network through Keras. It required me to denote how many classes/brands were in the training data. I split the file names and found there were about 350 unique brands of liquor. Still, I received errors about the input shape and the array shape not matching. This is somehting I would like to solve. 
+I tried a simple neural network through Keras. It required me to designate how many classes/brands were in the training data. I split the file names and found there were about 350 unique brands of liquor. Still, I received errors about the input shape and the array shape not matching. This is somehting I would like to solve. 
 
 KAZE was very slow to extract the features from the images. There should be a better implementation of this for a larger dataset. 
 
