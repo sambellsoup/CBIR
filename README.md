@@ -33,4 +33,4 @@ I tried a simple neural network through Keras. It required me to designate how m
 
 KAZE was very slow to extract the features from the images. There should be a better implementation of this for a larger dataset. The feature extraction involves calculating the image gradient for each training image. Calculating the cosine distance between each image can be optimized.
 
-I attempted to setup a convolutional denoising autoencoder, but it is very time-consuming and difficult to debug. 
+I attempted to setup a convolutional denoising autoencoder, but it is very time-consuming to run and difficult to debug. 
