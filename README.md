@@ -18,7 +18,7 @@ pickle - for saving data nearby
 vptree - vantage-point tree, the star algorithm that assigns images unique values based on their composition and calculates the distance between them. 
 time - keeping track of how long things take (not necessary) 
 
-![Fully Subdivided Vantage Point Tree]([Imgur](https://i.imgur.com/141xhIo.png))
+![Fully Subdivided Vantage Point Tree](https://i.imgur.com/141xhIo.png)
 
 ### Next Steps
 
