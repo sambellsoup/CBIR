@@ -3,7 +3,7 @@
 
 ### Feature Extraction
 
-There are many different ways to extract features from images, and I tried many of them. 
+There are many different ways to extract features from images, and I tried several. 
   
 My goal is to create the best-performing Content-Based Image Retrieval System. I wanted to achieve a baseline, so I began by using a color histogram for each image and then calculating the nearest neighbor based on chi-squared distance. This algorithm performed horribly scoring a 0/11 matches, but it did provide a nice framework for the other models to come. 
  
