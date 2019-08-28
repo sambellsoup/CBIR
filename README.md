@@ -31,6 +31,6 @@ Since SIFT and SURF are patented, I decided to check out ORB, the free alternati
  
 I tried a simple neural network through Keras. It required me to designate how many classes/brands were in the training data. I split the file names and found there were about 350 unique brands of liquor. Still, I received errors about the input shape and the array shape not matching. This is somehting I would like to solve. 
 
-KAZE was very slow to extract the features from the images. There should be a better implementation of this for a larger dataset. 
+KAZE was very slow to extract the features from the images. There should be a better implementation of this for a larger dataset. The feature extraction involves calculating the image gradient for each training image. Calculating the cosine distance between each image can be optimized.
 
 I attempted to setup a convolutional denoising autoencoder, but it is very time-consuming and difficult to debug. 
