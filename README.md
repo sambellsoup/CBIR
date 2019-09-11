@@ -26,6 +26,8 @@ The packages I used for the VP-Trees model include:
 ![Fully Subdivided Vantage Point Tree](https://i.imgur.com/141xhIo.png)
 (Fully subdivided vantage point tree)
 
+I have been able to extract the features from the image database using the KAZE algorithm. I will be testing this method with the 11 query images this week. 
+
 ### Next Steps
 
 Since SIFT and SURF are patented, I decided to check out ORB, the free alternative. ORB provides a list of keypoints and feature descriptors as vectors. Relating this information to a nearest neighbor, or bag of (visual) words is something I would like to explore further. 
