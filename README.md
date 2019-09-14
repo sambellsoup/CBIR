@@ -6,6 +6,10 @@
 There are many different ways to extract features from images, and I tried several. 
   
 My goal is to create the best-performing Content-Based Image Retrieval System. I wanted to achieve a baseline, so I began by using a color histogram for each image and then calculating the nearest neighbor based on chi-squared distance. This algorithm performed horribly scoring a 0/11 matches, but it did provide a nice framework for the other models to come. 
+
+The KAZE algorithm returned 0/11 matches. Even when returning the top 3 matches, none of the results matched the label of the query image. The matches were consistently around 0.6, which is alright, but still not returning the correct match. 
+
+Similarly, the ORB algorithm returned 0/11 matches. The matches were consistently around 0.3, which is pretty bad. 
  
 Image-Hashing with **VP-Trees** worked, but did not return any matching images. This is designed to return images that are the same or nearly the same, but the only semi-matching result was querying 'Four Grain' and the result being 'Four Roses.'
 
@@ -30,10 +34,6 @@ I have been able to extract the features from the image database using the KAZE 
 
 ### Next Steps
 
-Since SIFT and SURF are patented, I decided to check out ORB, the free alternative. ORB provides a list of keypoints and feature descriptors as vectors. Relating this information to a nearest neighbor, or bag of (visual) words is something I would like to explore further. 
- 
 I tried a simple neural network through Keras. It required me to designate how many classes/brands were in the training data. I split the file names and found there were about 350 unique brands of liquor. Still, I received errors about the input shape and the array shape not matching. This is somehting I would like to solve. 
-
-KAZE was very slow to extract the features from the images. There should be a better implementation of this for a larger dataset. The feature extraction involves calculating the image gradient for each training image. Calculating the cosine distance between each image can be optimized.
 
 I attempted to setup a convolutional denoising autoencoder, but it is very time-consuming to run and difficult to debug. 
